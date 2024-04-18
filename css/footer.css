@@ -1,0 +1,41 @@
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	border-radius: 10px;
+	padding: 80px 0;
+}
+
+.map {
+	width: 1250px;
+	height: 287px;
+}
+
+.footer__contacts {
+	width: 515px;
+	height: 231px;
+	background-color: white;
+	position: absolute;
+	margin: 28px 35px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer__contacts h2 {
+	padding: 15px;
+	color: white;
+	background-color: #004f44;
+	margin-bottom: 15px;
+
+	width: 200px;
+}
+
+.footer__item {
+	display: flex;
+	align-items: center;
+	margin: 10px;
+}
+
+.footer__contacts img {
+	margin-right: 10px;
+}

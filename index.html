@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Микрозелень</title>
+
+		<link
+			rel="stylesheet"
+			href="css/cart.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="/libs/splide/splide.min.css"
+		/>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="css/fonts.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/styles.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/header.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/main.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/select.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/btn.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/footer.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/helpers.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/catalog.css"
+		/>
+	</head>
+	<body>
+		<main>
+			<section
+				class="main"
+				id="main"
+			>
+				<div class="container">
+					<header class="header">
+						<div class="header__navbar">
+							<div class="header__logo">
+								<img
+									src="img/logo.svg"
+									alt=""
+								/>
+							</div>
+							<nav class="header__nav">
+								<ul>
+									<li>
+										<a
+											href="#main"
+											class="header__link"
+											>Главная</a
+										>
+									</li>
+									<li>
+										<a
+											href="#catalog-products"
+											class="header__link"
+											>Микрозелень</a
+										>
+									</li>
+									<li>
+										<a
+											href="#contacts"
+											class="header__link"
+											>Контакты</a
+										>
+									</li>
+								</ul>
+							</nav>
+						</div>
+
+						<div class="d-flex align-items-center">
+							<!-- <a class="header__img">
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<g clip-path="url(#clip0_108_12)">
+										<path
+											d="M9.07223 2.80555C10.2756 2.80445 11.4523 3.16029 12.4535 3.82807C13.4546 4.49585 14.2352 5.44555 14.6965 6.55704C15.1577 7.66852 15.279 8.89185 15.0449 10.0723C14.8108 11.2527 14.2319 12.3372 13.3813 13.1885C12.5308 14.0398 11.4468 14.6197 10.2666 14.8549C9.08643 15.0901 7.86299 14.9699 6.75108 14.5097C5.63917 14.0494 4.68876 13.2697 4.02007 12.2692C3.35138 11.2687 2.99445 10.0923 2.99445 8.88888C3.00175 7.27869 3.64425 5.73644 4.78232 4.59733C5.92039 3.45822 7.46205 2.81431 9.07223 2.80555ZM9.07223 1.66666C7.64381 1.66666 6.24747 2.09023 5.05978 2.88382C3.87209 3.67741 2.9464 4.80537 2.39977 6.12505C1.85314 7.44474 1.71011 8.89689 1.98878 10.2979C2.26745 11.6988 2.9553 12.9857 3.96535 13.9958C4.97539 15.0058 6.26227 15.6937 7.66325 15.9723C9.06422 16.251 10.5164 16.108 11.8361 15.5613C13.1557 15.0147 14.2837 14.089 15.0773 12.9013C15.8709 11.7136 16.2945 10.3173 16.2945 8.88888C16.2945 6.97343 15.5335 5.13643 14.1791 3.782C12.8247 2.42757 10.9877 1.66666 9.07223 1.66666Z"
+											fill="white"
+										/>
+										<path
+											d="M19.4444 18.4944L15.35 14.3722L14.5611 15.1556L18.6555 19.2778C18.707 19.3296 18.7681 19.3707 18.8355 19.3989C18.9028 19.4271 18.975 19.4417 19.048 19.442C19.121 19.4422 19.1934 19.4281 19.2609 19.4004C19.3284 19.3727 19.3899 19.332 19.4417 19.2806C19.4935 19.2291 19.5346 19.168 19.5628 19.1006C19.591 19.0333 19.6056 18.9611 19.6059 18.8881C19.6061 18.8151 19.592 18.7427 19.5643 18.6752C19.5366 18.6077 19.4959 18.5462 19.4444 18.4944Z"
+											fill="white"
+										/>
+									</g>
+									<defs>
+										<clipPath id="clip0_108_12">
+											<rect
+												width="20"
+												height="20"
+												fill="white"
+											/>
+										</clipPath>
+									</defs>
+								</svg>
+							</a> -->
+							<a
+								id="cart-btn"
+								class="header__img"
+								data-bs-toggle="modal"
+								data-bs-target="#CartModal"
+							>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<g clip-path="url(#clip0_108_2)">
+										<path
+											d="M7.40558 17.7778C8.09593 17.7778 8.65558 17.2181 8.65558 16.5278C8.65558 15.8374 8.09593 15.2778 7.40558 15.2778C6.71522 15.2778 6.15558 15.8374 6.15558 16.5278C6.15558 17.2181 6.71522 17.7778 7.40558 17.7778Z"
+											fill="white"
+										/>
+										<path
+											d="M15 17.7778C15.6904 17.7778 16.25 17.2181 16.25 16.5278C16.25 15.8374 15.6904 15.2778 15 15.2778C14.3096 15.2778 13.75 15.8374 13.75 16.5278C13.75 17.2181 14.3096 17.7778 15 17.7778Z"
+											fill="white"
+										/>
+										<path
+											d="M18.3778 2.98333C18.3261 2.9196 18.2609 2.86811 18.1869 2.83257C18.113 2.79703 18.032 2.77832 17.95 2.77777H6.38331L6.74442 3.88889H17.2222L15.7389 10.5556H7.40554L4.86665 2.51666C4.83918 2.43136 4.7915 2.35397 4.72765 2.29109C4.6638 2.22821 4.58569 2.18171 4.49998 2.15555L2.2222 1.45555C2.15216 1.43403 2.07857 1.42651 2.00563 1.43343C1.93269 1.44035 1.86182 1.46157 1.79708 1.49587C1.66632 1.56516 1.56845 1.68355 1.52498 1.825C1.48151 1.96644 1.49602 2.11937 1.5653 2.25012C1.63459 2.38088 1.75298 2.47875 1.89442 2.52222L3.88887 3.13333L6.43887 11.1889L5.52776 11.9333L5.45554 12.0056C5.23017 12.2653 5.10243 12.5954 5.09431 12.9392C5.0862 13.283 5.19822 13.6188 5.41109 13.8889C5.56251 14.073 5.75493 14.2192 5.97295 14.3156C6.19096 14.4121 6.42853 14.4562 6.66665 14.4444H15.9389C16.0862 14.4444 16.2275 14.3859 16.3317 14.2817C16.4359 14.1775 16.4944 14.0362 16.4944 13.8889C16.4944 13.7415 16.4359 13.6002 16.3317 13.496C16.2275 13.3919 16.0862 13.3333 15.9389 13.3333H6.57776C6.51378 13.3311 6.45145 13.3125 6.39679 13.2792C6.34213 13.2459 6.29698 13.199 6.2657 13.1432C6.23442 13.0873 6.21808 13.0244 6.21824 12.9604C6.21841 12.8963 6.23508 12.8335 6.26665 12.7778L7.60554 11.6667H16.1833C16.3117 11.6698 16.4373 11.6283 16.5386 11.5493C16.6399 11.4703 16.7106 11.3587 16.7389 11.2333L18.5 3.45555C18.5169 3.37273 18.5146 3.28714 18.4935 3.20531C18.4723 3.12348 18.4327 3.04756 18.3778 2.98333Z"
+											fill="white"
+										/>
+									</g>
+									<defs>
+										<clipPath id="clip0_108_2">
+											<rect
+												width="20"
+												height="20"
+												fill="white"
+											/>
+										</clipPath>
+									</defs>
+								</svg>
+							</a>
+						</div>
+					</header>
+
+					<div class="d-flex align-items-center">
+						<div class="main__content">
+							<h1 class="main__title">Микрозелень!</h1>
+							<p class="main__text">
+								Украшайте ваши блюда, добавьте разнообразие в
+								повседневный рацион!
+							</p>
+							<button class="btn btn-main">
+								<a href="#catalog-products">Товары</a>
+							</button>
+						</div>
+						<div class="main__imgs">
+							<div style="margin-right: 4px; width: 222px">
+								<div class="main__item">
+									<button class="btn btn-primary">
+										<a href="#catalog-products"
+											>Посмотреть</a
+										>
+									</button>
+									<img
+										style="height: 257px; width: 222px"
+										src="img/microzelen.jpg"
+										alt="Микрозелень"
+									/>
+								</div>
+								<div class="main__item">
+									<button class="btn btn-primary">
+										<a href="#catalog-products"
+											>Посмотреть</a
+										>
+									</button>
+									<img
+										style="height: 288px; width: 222px"
+										src="img/microzel.jpg"
+										alt="Микрозелень"
+									/>
+								</div>
+							</div>
+
+							<div class="main__item">
+								<button class="btn btn-primary">
+									<a href="#catalog-products">Посмотреть</a>
+								</button>
+								<img
+									style="height: 547px; width: 379px"
+									src="img/microzele.jpg"
+									alt="Микрозелень"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				class="catalog"
+				id="catalog-products"
+			>
+				<div class="catalog__filters">
+					<!-- <button class="btn btn-icon">
+						<img
+							src="img/filter.svg"
+							alt=""
+						/>
+					</button> -->
+					<input
+						id="input-search"
+						class="catalog__input"
+						type="text"
+					/>
+					<button
+						class="btn btn-icon catalog__search"
+						id="search"
+					>
+						<img
+							src="img/search.svg"
+							alt=""
+						/>
+					</button>
+				</div>
+				<div class="catalog__content">
+					<div class="catalog__header">
+						<h2 class="catalog__title">Товары</h2>
+						<!-- <button class="btn btn-text">Посмотреть все</button> -->
+					</div>
+					<div class="splide">
+						<div class="splide__track">
+							<ul
+								class="catalog__products splide__list"
+								id="catalog"
+							>
+								<li class="catalog__product">
+									<img
+										src="img/bazilik.png"
+										alt=""
+									/>
+									<div class="catalog__name">
+										Микрозелень
+										<span>100 руб.</span>
+									</div>
+									<div class="catalog__footer">
+										<span>Что-то</span>
+										<button
+											class="btn btn-primary btn-transparent"
+										>
+											Купить
+										</button>
+									</div>
+								</li>
+								<li class="catalog__product">
+									<img
+										src="img/bazilik.png"
+										alt=""
+									/>
+									<div class="catalog__name">
+										Микрозелень
+										<span>100 руб.</span>
+									</div>
+									<div class="catalog__footer">
+										<span>Что-то</span>
+										<button
+											class="btn btn-primary btn-transparent"
+										>
+											Купить
+										</button>
+									</div>
+								</li>
+								<li class="catalog__product">
+									<img
+										src="img/bazilik.png"
+										alt=""
+									/>
+									<div class="catalog__name">
+										Микрозелень
+										<span>100 руб.</span>
+									</div>
+									<div class="catalog__footer">
+										<span>Что-то</span>
+										<button
+											class="btn btn-primary btn-transparent"
+										>
+											Купить
+										</button>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div
+				class="container"
+				id="contacts"
+			>
+				<footer class="footer">
+					<div class="footer__contacts">
+						<h2>Контакты</h2>
+						<div class="footer__item">
+							<img
+								src="img/phone.svg"
+								alt=""
+							/>
+							<p>+7(XXX) XXX-XX-XX</p>
+						</div>
+						<div class="footer__item">
+							<img
+								src="img/email.svg"
+								alt=""
+							/>
+							<p>xxxxx@.com</p>
+						</div>
+					</div>
+					<iframe
+						class="map"
+						src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4236.268784563167!2d37.60161695785835!3d55.77439393396796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1680101513207!5m2!1sru!2sru"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</footer>
+			</div>
+		</main>
+
+		<!-- Корзина -->
+		<div
+			class="modal fade cart"
+			id="CartModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div>
+							<h5
+								class="modal-title"
+								id="exampleModalLabel"
+							>
+								Моя корзина
+							</h5>
+							<div class="cart__count">
+								<span id="cart-count"></span> товаров в корзине
+							</div>
+						</div>
+
+						<button
+							class="btn btn-primary btn-transparent"
+							data-bs-dismiss="modal"
+						>
+							Вернуться к покупкам
+						</button>
+					</div>
+					<div class="modal-body">
+						<div id="cart-form">
+							<ul class="cart__products">
+								<li class="cart__product">
+									<div class="cart__product-content">
+										<img
+											class="cart__img"
+											src="img/rukola.png"
+											alt=""
+										/>
+										<div>
+											<h3 class="cart__product-title">
+												Наименование
+											</h3>
+											<div class="cart__product-info">
+												<span>Размер:</span>
+												<div
+													class="btn-group"
+													role="group"
+													aria-label="Basic example"
+												>
+													<button
+														type="button"
+														class="btn btn-secondary"
+													>
+														s
+													</button>
+													<button
+														type="button"
+														class="btn btn-secondary"
+													>
+														m
+													</button>
+													<button
+														type="button"
+														class="btn btn-secondary"
+													>
+														l
+													</button>
+												</div>
+											</div>
+											<div class="cart__product-info">
+												<span>Цена:</span>
+												<div
+													class="cart__product-price"
+												>
+													100 руб
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<button
+										class="btn btn-primary btn-transparent cart__remove"
+									>
+										Удалить
+									</button>
+								</li>
+								<li class="cart__product">
+									<div class="cart__product-content">
+										<img
+											class="cart__img"
+											src="img/rukola.png"
+											alt=""
+										/>
+										<div>
+											<h3 class="cart__product-title">
+												Наименование
+											</h3>
+											<div class="cart__product-info">
+												<span>Размер:</span>
+												<div
+													class="btn-group"
+													role="group"
+													aria-label="Basic example"
+												>
+													<button
+														type="button"
+														class="btn btn-secondary"
+													>
+														s
+													</button>
+													<button
+														type="button"
+														class="btn btn-secondary"
+													>
+														m
+													</button>
+													<button
+														type="button"
+														class="btn btn-secondary"
+													>
+														l
+													</button>
+												</div>
+											</div>
+											<div class="cart__product-info">
+												<span>Цена:</span>
+												<div
+													class="cart__product-price"
+												>
+													100 руб
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<button
+										class="btn btn-primary btn-transparent cart__remove"
+									>
+										Удалить
+									</button>
+								</li>
+							</ul>
+
+							<div class="cart__footer">
+								<div class="mb-3">
+									<label
+										for="exampleFormControlInput1"
+										class="form-label"
+										>Введите номер телефона для оформления
+										заказа</label
+									>
+									<input
+										type="text"
+										class="form-control"
+										id="exampleFormControlInput1"
+										placeholder="Номер телефона"
+									/>
+								</div>
+
+								<div>
+									<div class="cart__sum">
+										Сумма заказа :
+										<strong
+											><span id="cart-sum">5000</span>
+											р.</strong
+										>
+									</div>
+									<button
+										id="buy"
+										class="btn btn-primary btn-transparent"
+									>
+										Оформить заказ
+									</button>
+								</div>
+							</div>
+						</div>
+						<div id="empty-cart">
+							<img
+								src="img/empty-cart.png"
+								alt=""
+							/>
+							<h2>Ваша корзина пуста</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+		<script src="/libs/splide/splide.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+			integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

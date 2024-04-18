@@ -1,0 +1,55 @@
+.main {
+	background-color: #004f44;
+	height: 100vh;
+}
+
+.main__content {
+	margin-right: 94px;
+	width: 460px;
+}
+
+.main__title {
+	font-size: 64px;
+	line-height: 72px;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.main__text {
+	font-size: 16px;
+	line-height: 28px;
+	color: white;
+	margin-bottom: 32px;
+}
+
+.main__imgs {
+	height: 547px;
+	display: flex;
+	align-items: center;
+	width: 607px;
+}
+
+.main__item {
+	position: relative;
+}
+
+.main__item button {
+	position: absolute;
+	left: 15px;
+	top: 12px;
+	font-size: 12px;
+	padding: 7px 15px;
+}
+
+.btn a {
+	text-decoration: none;
+	color: white;
+}
+
+.btn-main a {
+	color: #004f44;
+}
+
+.btn-main:hover a {
+	color: white;
+}
